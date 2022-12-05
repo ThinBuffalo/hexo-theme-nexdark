@@ -40,7 +40,7 @@ function searchkey(keyword) {
             }
             if (flag) {
                 rend.title = !rend.title ? post.title : rend.title;
-                rend.text= !rend.text ? post.text : rend.text;
+                rend.text= !rend.text ? `…${post.text.substring(0, 18)}…` : rend.text;
                 rend.href = `/${post.path}`;
                 render(rend);
             }

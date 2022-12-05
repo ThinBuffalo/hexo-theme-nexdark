@@ -1,4 +1,5 @@
 $gutter = 24px;
+$radius = 13px;
 
 :root {
     --gutter: 25px;
@@ -24,6 +25,7 @@ $gutter = 24px;
 @import '_partial/article.styl';
 @import '_partial/py.styl';
 @import '_partial/searchbox.styl';
+@import './color.styl';
 @import '_widget/hitokoto.styl';
 
 *, *:after, *::before {
@@ -181,7 +183,7 @@ body {
         .nexmoe-list-item {
             padding: 0 36px;
             color: #9ca2a8;
-            border-radius: var(--radius);
+            border-radius: $radius;
             margin-bottom: 10px;
             text-align: center;
             transition: none !important;
@@ -193,8 +195,8 @@ body {
 
         .nexmoe-list-item.true {
             opacity: 0.9;
-            background: var(--color-primary);
-            box-shadow: 0 2px 12px var(--color-primary);
+            background: $color1;
+            box-shadow: 0 2px 12px $color1;
         }
 
         .nexmoe-list-item i {
@@ -211,7 +213,7 @@ body {
         box-shadow: 0 0 1rem var(--color-shadow);
         background-color: #fff;
         margin: 20px;
-        border-radius: var(--radius);
+        border-radius: $radius;
         overflow: hidden;
         white-space: normal;
 
@@ -220,7 +222,7 @@ body {
             font-weight: 400;
             padding: 24px 18px 12px;
             margin: 0;
-            color: var(--color-primary);
+            color: $color1;
         }
 
         .nexmoe-widget {
@@ -248,14 +250,14 @@ body {
             }
 
             .category-list-count, .archive-list-count {
-                background-color: var(--color-primary-bg);
+                background-color: rgba(hexo-config('color.first.r'), hexo-config('color.first.g'), hexo-config('color.first.b'), 0.1);
                 display: inline-block;
                 width: 26px;
                 height: 26px;
                 line-height: 26px;
                 text-align: center;
                 border-radius: 100%;
-                color: var(--color-primary);
+                color: $color1;
                 position: absolute;
                 right: 18px;
                 top: 10px;
@@ -268,7 +270,7 @@ body {
             padding-top: 11px;
 
             a {
-                border-radius: var(--radius);
+                border-radius: $radius;
                 padding: 5px 10px;
                 font-size: 12px !important;
                 display: inline-block;
@@ -294,7 +296,7 @@ body {
         font-size: 12px;
 
         a {
-            color: var(--color-primary);
+            color: $color1;
         }
     }
 }
@@ -327,7 +329,7 @@ body {
             display: inline-block;
             color: #ddd;
             background-color: #f5f6f5;
-            border-radius: var(--radius);
+            border-radius: $radius;
             margin-top: -10px;
 
             .prev {
@@ -336,15 +338,15 @@ body {
 
             .current {
                 color: #fff;
-                background: var(--color-primary);
+                background: $color1;
                 opacity: 0.9;
-                box-shadow: 0 2px 12px var(--color-primary);
+                box-shadow: 0 2px 12px $color1;
             }
         }
 
         .nexmoe-page-nav > * {
             color: #999;
-            border-radius: var(--radius);
+            border-radius: $radius;
             width: 35px;
             height: 35px;
             line-height: 35px;
@@ -495,7 +497,7 @@ body {
             overflow: hidden;
 
             a {
-                color: var(--color-primary);
+                color: $color1;
             }
         }
 
@@ -714,8 +716,8 @@ body {
 
 .nexmoe-toc a:hover {
     color: #fff;
-    background-color: var(--color-primary);
-    box-shadow: 0 1px 10px var(--color-primary);
+    background-color: $color1;
+    box-shadow: 0 1px 10px $color1;
 }
 
 .nexmoe-toc ol {
@@ -745,75 +747,75 @@ photos img {
 
 .nexmoe-rainbow {
     a:nth-child(7n+1) {
-        background-color: var(--color-primary-bg);
-        color: var(--color-primary);
+        background-color: $nrbgc1;
+        color: $color1;
     }
 
     a:nth-child(7n+2) {
-        background-color: var(--color2-bg);
-        color: var(--color2);
+        background-color: $nrbgc2;
+        color: $color2;
     }
 
     a:nth-child(7n+3) {
-        background-color: var(--color3-bg);
-        color: var(--color3);
+        background-color: $nrbgc3;
+        color: $color3;
     }
 
     a:nth-child(7n+4) {
-        background-color: var(--color4-bg);
-        color: var(--color4);
+        background-color: $nrbgc4;
+        color: $color4;
     }
 
     a:nth-child(7n+5) {
-        background-color: var(--color5-bg);
-        color: var(--color5);
+        background-color: $nrbgc5;
+        color: $color5;
     }
 
     a:nth-child(7n+6) {
-        background-color: var(--color6-bg);
-        color: var(--color6);
+        background-color: $nrbgc6;
+        color: $color6;
     }
 
     a:nth-child(7n+7) {
-        background-color: var(--color7-bg);
-        color: var(--color7);
+        background-color: $nrbgc7;
+        color: $color7;
     }
 }
 
 .nexmoe-rainbow-fill {
     a:nth-child(7n+1) {
         color: #fff;
-        background-color: var(--color-primary);
+        background-color: $nrfbgc1;
     }
 
     a:nth-child(7n+2) {
         color: #fff;
-        background-color: var(--color2);
+        background-color: $nrfbgc2;
     }
 
     a:nth-child(7n+3) {
         color: #fff;
-        background-color: var(--color3);
+        background-color: $nrfbgc3;
     }
 
     a:nth-child(7n+4) {
         color: #fff;
-        background-color: var(--color4);
+        background-color: $nrfbgc4;
     }
 
     a:nth-child(7n+5) {
         color: #fff;
-        background-color: var(--color5);
+        background-color: $nrfbgc5;
     }
 
     a:nth-child(7n+6) {
         color: #fff;
-        background-color: var(--color6);
+        background-color: $nrfbgc6;
     }
 
     a:nth-child(7n+7) {
         color: #fff;
-        background-color: var(--color7);
+        background-color: $nrfbgc7;
     }
 }
 
@@ -834,7 +836,7 @@ photos img {
 
 .gallery-pro > * {
     margin-bottom: 12px;
-}
+    }
 
 .gallery-pro > * img {
     width: 100%;
