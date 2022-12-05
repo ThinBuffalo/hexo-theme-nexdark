@@ -1,4 +1,4 @@
-avatar: https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png # 网站 Logo
+avatar: https://i.imgtg.com/2022/12/05/DkApK.jpg # 网站 Logo
 background: # 既是博客的背景，又是文章默认头图
     path: https://i.dawnlab.me/b5a7e61560facdd5b8aa9683fce147d7.png
     width: 1280
@@ -9,7 +9,8 @@ favicon:
 
 function: # 功能开关，可选值（true,false）
   globalToc: true # 开启该功能会自动开启文章 TOC（文章目录） 功能
-  wordCount: false # 是否开启文章字数统计 (true, false)
+  wordCount: true # 是否开启文章字数统计 (true, false)
+  darkmode: true
 
 imageCDN: # 图片 CDN 功能
   enable: false # 开启该功能  
@@ -28,23 +29,20 @@ menu:
         - /
         - icon-home
     文章归档:
-        - /archive.html
+        - /archives.html
         - icon-container
-    我的朋友:
-        - /PY.html
-    给我赞助:
-        - /donate.html
-        - icon-coffee
-    关于博主:
+    关于作者:
         - /about.html
         - icon-info-circle
+    我的朋友: 
+        - /PY.html
 
 widgets:
     - name: search
       enable: true
       options: 
         search: 
-            type: engine # 可选engine（用搜索引擎搜索）、swiftype、或local（本地搜索）
+            type: local # 可选engine（用搜索引擎搜索）、swiftype、或local（本地搜索）
             url: https://cn.bing.com/search?q=site:nexmoe.com # 搜索引擎地址，在type为swiftype时无效 e.g:https://www.google.com/search?q={你的博客链接}
             id: <swiftype-id> # swiftype的id，见启用教程。在type为engine时无效
     - name: social
@@ -88,7 +86,7 @@ widgets:
       options: 
         maxTagcloud: 17  # 标签云组件显示的标签数量，0 表示不限制
     - name: hitokoto # 一言 widget
-      enable: false
+      enable: true
       options: 
         widgetHitokoto: # 一言组件
             loading_placeholder: '🚀 获取中...' # 正在一言时的占位符
@@ -131,3 +129,33 @@ slotCopyright: '<strong>版权声明：</strong>本文采用 <a href="https://cr
 
 slotArticleEnd: '<p><img data-fancybox="gallery" src="https://i.dawnlab.me/53a8c7cf3ad77a0f0a456ce2c6afe88a.png" 
 alt="53a8c7cf3ad77a0f0a456ce2c6afe88a.png" data-caption="53a8c7cf3ad77a0f0a456ce2c6afe88a.png" loading="lazy"></p>'
+
+color: # 配色方案，从first到seventh为优先级为1-7的颜色，默认为彩虹配色
+  first: # 同时作为主题色
+    r: 144
+    g: 144
+    b: 255
+  second:
+    r: 26
+    g: 152
+    b: 255
+  third:
+    r: 0
+    g: 219
+    b: 255
+  fourth:
+    r: 51
+    g: 213
+    b: 122
+  fifth:
+    r: 255
+    g: 185
+    b: 0
+  sixth:
+    r: 255
+    g: 118
+    b: 30
+  seventh:
+    r: 255 
+    g: 78
+    b: 106
