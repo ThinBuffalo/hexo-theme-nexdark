@@ -41,7 +41,7 @@
 
     <% if (theme.customStyles) { %>
         <% theme.customStyles.forEach(function(custom){ %>
-            <%- css_auto_version('custom.css') %>
+            <%- css_auto_version(custom) %>
         <% }) %>
     <% } %>
 

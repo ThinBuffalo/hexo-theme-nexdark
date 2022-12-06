@@ -17,9 +17,10 @@ imageCDN: # 图片 CDN 功能
   origin: /../../images/ # 图片原始目录
   to: https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/ # 图片 CDN 域名
 
-# 自定义样式，启用后可在站点的source文件夹下新建custom.css自定义站点样式
+# 自定义样式，启用后可在站点的source文件夹下新建css文件自定义站点样式
 customStyles:
-  - custom.css
+  - custom.css  # 要导入的css，支持导入多个
+# - test.css
   
 # 附加图标库 使用说明：https://docs.nexmoe.com/config/icon
 iconlib: # //at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css
