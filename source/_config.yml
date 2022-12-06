@@ -62,8 +62,8 @@ widgets:
             GitHub:
                 - https://github.com/nexmoe/
                 - icon-github
-                - rgb(25, 23, 23)
-                - rgba(25, 23, 23, .1)
+                - rgb(217, 214, 209)
+                - rgba(0, 0, 0, 0)
             知乎:
                 - https://www.zhihu.com/people/nexmoe
                 - icon-zhihu
@@ -131,31 +131,11 @@ slotArticleEnd: '<p><img data-fancybox="gallery" src="https://i.dawnlab.me/53a8c
 alt="53a8c7cf3ad77a0f0a456ce2c6afe88a.png" data-caption="53a8c7cf3ad77a0f0a456ce2c6afe88a.png" loading="lazy"></p>'
 
 color: # 配色方案，从first到seventh为优先级为1-7的颜色，默认为彩虹配色
-  first: # 同时作为主题色
-    r: 144
-    g: 144
-    b: 255
-  second:
-    r: 26
-    g: 152
-    b: 255
-  third:
-    r: 0
-    g: 219
-    b: 255
-  fourth:
-    r: 51
-    g: 213
-    b: 122
-  fifth:
-    r: 255
-    g: 185
-    b: 0
-  sixth:
-    r: 255
-    g: 118
-    b: 30
-  seventh:
-    r: 255 
-    g: 78
-    b: 106
+# 颜色优先级: { 颜色的rgb值 }
+  first: { r: 144, g: 144, b: 255 } # 同时作为主题色
+  second: { r: 26, g: 152, b: 255 }
+  third: { r: 0, g: 219, b: 255 }
+  fourth: { r: 51, g: 213, b: 122 }
+  fifth: { r: 255, g: 185, b: 0 }
+  sixth: { r: 255, g: 118, b: 30 }
+  seventh: { r: 255, g: 78, b: 106 }
